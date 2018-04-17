@@ -14,13 +14,20 @@ import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 import javax.swing.SwingUtilities;
 
-
+/**
+ * Clase principal en la que iniciamos la gui y establecemos los botones y sus funcionalidades
+ * @author Juan Martínez Hurtado de Mendoza
+ * @since 16-04-2018
+ */
 public class FPrincipal extends javax.swing.JFrame {
  private PDibujo pDibujo;
  private JPanel PContenedorDibujo;
  private Color color;
 
-
+/**
+ * Clase main en la que iniciamos la gui a traves de un hilo.
+ * @param args
+ */
  public static void main(String[] args) {
   SwingUtilities.invokeLater(new Runnable() {
    public void run() {
@@ -31,10 +38,17 @@ public class FPrincipal extends javax.swing.JFrame {
   });
  }
  
+ /**
+  * Constructor de la clase. Inicializa la GUI
+  */
  public FPrincipal() {
   super();
   initGUI();
  }
+ 
+ /**
+  * Se inicializa la GUI, estableciendo los botones y sus funcionalidades.
+  */
  
  private void initGUI() {
   try {

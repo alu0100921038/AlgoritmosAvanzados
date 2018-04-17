@@ -12,6 +12,12 @@ import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+/**
+ * Clase PDibujo en la que dibujamos el grid y hacemos los movimientos pertinentes
+ * @author Juan Martínez Hurtado de Mendoza
+ * @since 16-04-2018
+ */
+
 public class PDibujo extends JPanel {
  private int ancho;
  private int alto;
@@ -22,10 +28,17 @@ public class PDibujo extends JPanel {
  private int y;
  private Color c;
  
+ /**
+  * Constructor de la clase que se inicializa con un numero de casillas predefinido.
+  * @param num numero de casillas a establecer
+  */
  public PDibujo(int num) {
 	 numeroCasillas = num;
  }
 
+ /**
+  * Método en el que se pinta la cuadrícula y los movimientos de la línea
+  */
  public void paint(Graphics g){
 	 
 	 
@@ -112,6 +125,11 @@ public class PDibujo extends JPanel {
 		   
    }
   }
+ 
+/*******************************************
+ ******* Getters y Setters *****************
+ *******************************************
+ *******************************************/
 public boolean isNotFinish() {
 	return notFinish;
 }

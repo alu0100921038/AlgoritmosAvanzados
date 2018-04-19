@@ -3,7 +3,7 @@
 using namespace std;
 
 class Dni : private string
-{ char digito[8];
+{ char digito[9];
   string letra;
   string nombre;
   char letras[23]={'T','R','W','A','G','M','Y','F','P',
